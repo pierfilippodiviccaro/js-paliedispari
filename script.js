@@ -29,3 +29,41 @@ if (isWordPalindrome(wordUser)) {
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+// Dichiarazioni di variabili
+let numRandomUser = parseInt(prompt("scegli un numero da 1 a 5"));
+let randomNumber = numRandom(5);
+let win = false;
+
+
+// logica
+
+if (numRandomUser %2 == 0){
+    console.log("il numero che hai scelto è pari")
+}
+else{
+    console.log("il numero che hai scelto è dispari")
+}
+
+console.log('numRandomUser', numRandomUser);
+console.log('randomNumber', randomNumber);
+
+if ((numRandomUser + randomNumber) % 2 == 0) {
+    win = true;
+} else {
+    win = false;
+}
+
+
+// output
+if (win) {
+    console.log('hai vinto');
+} else {
+    console.log('hai perso');
+}
+
+
+// function
+function numRandom (x) {
+     const numRandom = Math.floor(Math.random() * x + 1);
+     return numRandom; 
+}
