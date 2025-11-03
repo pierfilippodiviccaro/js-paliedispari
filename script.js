@@ -30,12 +30,19 @@ if (isWordPalindrome(wordUser)) {
 // Dichiariamo chi ha vinto.
 
 // Dichiarazioni di variabili
+let scelta = prompt("Scegli tra pari o dispari").toLowerCase().trim();
 let numRandomUser = parseInt(prompt("scegli un numero da 1 a 5"));
 let randomNumber = numRandom(5);
 let win = false;
 
 
+
 // logica
+while (scelta !== "pari" && scelta !== "dispari" ){
+    let scelta = prompt("sbagliato, scegli se è pari o dispari ").toLowerCase().trim()
+}
+
+
 
 if (numRandomUser %2 == 0){
     console.log("il numero che hai scelto è pari")
